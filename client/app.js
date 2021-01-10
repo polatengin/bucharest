@@ -15,6 +15,9 @@ function initMap() {
   };
 
   const showNextData = async () => {
+    // get current sale info from fetched data
+    const currentData = data[currentIndex];
+
   };
 
   const map = new Microsoft.Maps.Map(document.getElementById("map"), { navigationBarMode: Microsoft.Maps.NavigationBarMode.compact, zoom: 10 });
