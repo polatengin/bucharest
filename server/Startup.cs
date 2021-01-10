@@ -10,6 +10,13 @@ using Microsoft.Extensions.Hosting;
 
 namespace server
 {
+  public class CityInformation
+  {
+    public string CityName { get; set; }
+    public decimal Latitude { get; set; }
+    public decimal Longitude { get; set; }
+  }
+
   public class Startup
   {
     // This method gets called by the runtime. Use this method to add services to the container.
