@@ -13,4 +13,6 @@ function initMap() {
     currentIndex = 0;
   };
   const map = new Microsoft.Maps.Map(document.getElementById("map"), { navigationBarMode: Microsoft.Maps.NavigationBarMode.compact, zoom: 10 });
+  // fetch new data from API in each 150 seconds (15 seconds per sale, 10 sale)
+  setInterval(fetchData, PRODUCT_COUNT * PRODUCT_SHOW_DURATION);
 }
