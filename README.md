@@ -11,3 +11,5 @@ To run the project, go to [./server](./server) folder and run the following comm
 ```bash
 dotnet run
 ```
+
+_API_ will run on [http://localhost:5000](http://localhost:5000) and [https://localhost:5001](https://localhost:5001)
