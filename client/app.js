@@ -12,4 +12,5 @@ function initMap() {
     // start showing product sales on map from first item
     currentIndex = 0;
   };
+  const map = new Microsoft.Maps.Map(document.getElementById("map"), { navigationBarMode: Microsoft.Maps.NavigationBarMode.compact, zoom: 10 });
 }
