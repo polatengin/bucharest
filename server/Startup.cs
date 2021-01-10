@@ -55,6 +55,21 @@ namespace server
       }
 
       app.UseCors("dev");
+
+      app.Map("", builder =>
+      {
+        builder.Run(async context =>
+        {
+          var model = Enumerable.Range(1, 10).Select(e => new
+          {
+            location = CITY_LIST[random.Next(CITY_LIST.Length)],
+            productName = $"Urun {e}",
+            quantity = random.Next(1, 100)
+          });
+
+          await context.Response.WriteAsJsonAsync(model);
+        });
+      });
     }
   }
-    }
+}
