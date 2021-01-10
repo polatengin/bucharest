@@ -44,5 +44,17 @@ namespace server
       new CityInformation() { CityName = "Izmit", Latitude = 40.766666M, Longitude = 29.916668M },
       new CityInformation() { CityName = "Tekirdag", Latitude = 40.977779M, Longitude = 27.515278M },
     };
+
+    private Random random = new Random();
+
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    {
+      if (env.IsDevelopment())
+      {
+        app.UseDeveloperExceptionPage();
+      }
+
+      app.UseCors("dev");
+    }
   }
     }
