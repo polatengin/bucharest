@@ -18,6 +18,11 @@ function initMap() {
     // get current sale info from fetched data
     const currentData = data[currentIndex];
 
+    // center map to current sale location
+    map.setView({
+      center: new Microsoft.Maps.Location(currentData.location.latitude, currentData.location.longitude)
+    });
+
   };
 
   const map = new Microsoft.Maps.Map(document.getElementById("map"), { navigationBarMode: Microsoft.Maps.NavigationBarMode.compact, zoom: 10 });
