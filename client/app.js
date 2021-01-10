@@ -28,6 +28,9 @@ function initMap() {
       title: `New Sale in ${currentData.location.cityName}`,
       description: `${currentData.quantity} x ${currentData.productName}`
     });
+    // show information box on map
+    infoBox.setMap(map);
+
   };
 
   const map = new Microsoft.Maps.Map(document.getElementById("map"), { navigationBarMode: Microsoft.Maps.NavigationBarMode.compact, zoom: 10 });
