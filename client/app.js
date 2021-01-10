@@ -11,6 +11,7 @@ function initMap() {
 
     // start showing product sales on map from first item
     currentIndex = 0;
+    showNextData();
   };
 
   const showNextData = async () => {
