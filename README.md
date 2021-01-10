@@ -17,3 +17,9 @@ _API_ will run on [http://localhost:5000](http://localhost:5000) and [https://lo
 ## Client
 
 [Bing Maps v8 Javascript API](https://docs.microsoft.com/en-us/bingmaps/getting-started/) show map on the screen and sale data in an infobox.
+
+To run the project, go to [./client](./client) folder and run the following command on _Terminal_
+
+```bash
+npm run start
+```
