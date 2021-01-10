@@ -23,6 +23,11 @@ function initMap() {
       center: new Microsoft.Maps.Location(currentData.location.latitude, currentData.location.longitude)
     });
 
+    // create information box to show current sale data on map
+    const infoBox = new Microsoft.Maps.Infobox(new Microsoft.Maps.Location(currentData.location.latitude, currentData.location.longitude), {
+      title: `New Sale in ${currentData.location.cityName}`,
+      description: `${currentData.quantity} x ${currentData.productName}`
+    });
   };
 
   const map = new Microsoft.Maps.Map(document.getElementById("map"), { navigationBarMode: Microsoft.Maps.NavigationBarMode.compact, zoom: 10 });
