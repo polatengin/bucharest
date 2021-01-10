@@ -4,4 +4,12 @@ function initMap() {
 
   let data = [];
   let currentIndex = 0;
+
+  const fetchData = async () => {
+    // fetch latest product sale data from API
+    data = await (await fetch("http://localhost:5000")).json();
+
+    // start showing product sales on map from first item
+    currentIndex = 0;
+  };
 }
