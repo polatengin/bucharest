@@ -13,3 +13,7 @@ dotnet run
 ```
 
 _API_ will run on [http://localhost:5000](http://localhost:5000) and [https://localhost:5001](https://localhost:5001)
+
+## Client
+
+[Bing Maps v8 Javascript API](https://docs.microsoft.com/en-us/bingmaps/getting-started/) show map on the screen and sale data in an infobox.
