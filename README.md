@@ -23,3 +23,5 @@ To run the project, go to [./client](./client) folder and run the following comm
 ```bash
 npm run start
 ```
+
+[http-server](https://www.npmjs.com/package/http-server) will start serving the client app on [http://localhost:8080](http://localhost:8080)
