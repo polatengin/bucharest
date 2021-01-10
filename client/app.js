@@ -31,6 +31,11 @@ function initMap() {
     // show information box on map
     infoBox.setMap(map);
 
+    // iterate to next sale data
+    currentIndex++;
+    if (currentIndex >= data.length) {
+      currentIndex = 0;
+    }
   };
 
   const map = new Microsoft.Maps.Map(document.getElementById("map"), { navigationBarMode: Microsoft.Maps.NavigationBarMode.compact, zoom: 10 });
